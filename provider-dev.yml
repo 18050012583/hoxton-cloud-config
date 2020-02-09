@@ -1,8 +1,1 @@
 name: chenjf-bus-server
-
-spring:
-  rabbitmq:
-    host: 192.168.137.129
-    port: 5672
-    username: guest
-    password: guest
