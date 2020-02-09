@@ -1,4 +1,4 @@
-name: chenjf
+name: chenjf-bus
 
 spring:
   rabbitmq:
