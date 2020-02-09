@@ -1,1 +1,8 @@
 name: chenjf
+
+spring:
+  rabbitmq:
+    addresses: 192.168.137.129
+    port: 5672
+    username: guest
+    password: guest
