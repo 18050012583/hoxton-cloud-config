@@ -1,1 +1,18 @@
-name: chenjf
+name: 
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: hoxton-provider-service
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port} # 在注册中心显示IP地址
+    lease-renewal-interval-in-seconds: 10 #发送心跳续约间隔
+    lease-expiration-duration-in-seconds: 10 #eureka client发送心跳给server端后，续约到期时间（默认90秒）
